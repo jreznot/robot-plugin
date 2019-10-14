@@ -3,14 +3,14 @@ package amailp.intellij.robot.testFramework
 import java.io.File
 
 import com.intellij.psi.{PsiPolyVariantReference, ResolveResult}
-import com.intellij.testFramework.fixtures.LightPlatformCodeInsightFixtureTestCase
+import com.intellij.testFramework.fixtures.BasePlatformTestCase
 import org.junit.Ignore
 import org.scalatest.Matchers
 import org.scalatest.junit.AssertionsForJUnit
 
 @Ignore
 class RobotCodeInsightFixtureTestCase
-    extends LightPlatformCodeInsightFixtureTestCase
+    extends BasePlatformTestCase
     with Matchers
     with AssertionsForJUnit {
   override def getTestDataPath =
